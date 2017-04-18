@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--将对应属性抽取到样式中去-->
+    <TextView
+        android:text="功能列表"
+        style="@style/titleStyle"
+
+     />
+    <!--<TextView
+        android:text="秋天秋天悄悄过去，留下小秘密，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"/>   -->
+    <com.liyanli.mobilesafe.view.FocusTextView
+        android:text="秋天秋天悄悄过去，留下小秘密，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever">
+        </com.liyanli.mobilesafe.view.FocusTextView>
+    
+    <GridView
+        android:id="@+id/gv_home"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="10dp"></GridView>
+
+</LinearLayout>
